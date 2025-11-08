@@ -35,7 +35,10 @@ class _EmployeeListScreenState extends State<EmployeeListScreen> {
       appBar: AppBar(
         title: Text(
           'Employees Directory',
-          style: TextStyle(fontSize: Responsive.sp(18)),
+          style: TextStyle(
+            fontSize: Responsive.sp(18),
+            color: Colors.white
+          ),
         ),
         backgroundColor: Colors.blueAccent,
         elevation: 3,

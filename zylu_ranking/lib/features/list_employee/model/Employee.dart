@@ -15,7 +15,10 @@ class Employee {
       id: json['id'],
       name: json['employee_name'],
       experience: json['experience_in_years'],
-      isActive: json['is_active'],
+      isActive:
+          json['is_active'] is bool
+              ? json['is_active']
+              : json['is_active'] == 1,
     );
   }
 }

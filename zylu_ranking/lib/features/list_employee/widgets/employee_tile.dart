@@ -10,7 +10,7 @@ class EmployeeTile extends StatelessWidget {
   Widget build(BuildContext context) {
     Responsive.init(context);
 
-    bool highlight = employee.experience > 5;
+    bool highlight = employee.experience >= 5;
 
     return Padding(
       padding: EdgeInsets.symmetric(
